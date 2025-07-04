@@ -11,14 +11,15 @@ import java.time.LocalDate;
 
 public class Client {
     public static void main(String[] args) {
-        Client client = new Client();
-        client.testCase_cartQntNegative();
-        client.testCase_emptyCart();
-        client.testCase_expiredProduct();
-        client.testCase_generalCaseWithoutShippment();
-        client.testCase_generalCaseWithShippment();
-        client.testCase_unacceptableCartQuantity();
-        client.testCase_unsufficientBalance();
+       Client client = new Client();
+       
+       client.testCase_cartQntNegative();
+       client.testCase_unacceptableCartQuantity();
+       client.testCase_unsufficientBalance();
+       client.testCase_generalCaseWithoutShippment();
+       client.testCase_generalCaseWithShippment();
+       client.testCase_emptyCart();
+       client.testCase_expiredProduct();
     }
 
     void testCase_emptyCart(){
@@ -68,7 +69,7 @@ public class Client {
     }
 
     void testCase_generalCaseWithShippment() {
-        Product product = new Product("DC Comic Book", 10, 3, LocalDate.of(2025, 8, 1), 1000);
+        Product product = new Product("DC Comic Book", 10, 3, LocalDate.of(2025, 8, 1), 10);
         Customer customer = new Customer("Mohamed", 10);
 
         try {
