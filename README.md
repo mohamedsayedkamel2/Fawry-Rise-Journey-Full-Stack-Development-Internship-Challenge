@@ -11,6 +11,8 @@ CheckoutProcessor checkoutProcessor = new CheckoutProcessor(customer, cart);
 checkoutProcessor.processCheckout();
 ```
 
+Output:
+```
 ** Checkout receipt **
 Qty -- Product Name -- Price per unit
 1x DC Comic Book 3 L.E
@@ -24,3 +26,4 @@ Total package weight: 0.01kg
 Subtotal: 3 L.E
 Shipping: 1 L.E
 Amount: 4 L.E
+```
